@@ -3,11 +3,12 @@ require "pry"
 
 class Gossip
 
-  attr_accessor :author, :content
+  attr_accessor :author, :content, :gossips
 
   def initialize(author, content)
     @content = content
     @author = author
+    @gossips = gossips
 
   end
 
@@ -29,8 +30,16 @@ class Gossip
   return all_gossips
 end
 
+def index_gossip
+  all_gossips.each do |gossip|
+    puts "#{gossip}"
+  end
+
+end
+
 def self.find(id)
-   return self.all[id]
+  puts self.all[id]
+
  end
 
 
