@@ -1,6 +1,8 @@
 Salut !
 
 Alors j'ai réussi à aller jusqu'à l'affichage des gossips sur la paga d'acceuil
-mais je n'ai vraiment pas réussi à m'en sortir a partir de la méthode #find...
+ainsi qu'a écrire une méthode find fonctionnelle. En revanche je n'ai pas réussi à 
+ecrire la page show.erb.
+Lorsque je rentre un url type : localhost***/gossip/2 par exemple, ma page reste blanche.
 
 Bon courage ! ;)
