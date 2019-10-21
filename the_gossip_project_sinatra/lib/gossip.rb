@@ -30,17 +30,9 @@ class Gossip
   return all_gossips
 end
 
-def index_gossip
-  all_gossips.each do |gossip|
-    puts "#{gossip}"
-  end
-
-end
-
 def self.find(id)
-  puts self.all[id]
-
- end
+  Gossip.all[id.to_i]
+end
 
 
 # binding.pry

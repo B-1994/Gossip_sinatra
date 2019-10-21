@@ -28,9 +28,8 @@ end
   end
 
   get '/gossips/:id' do
-    @gossips = Gossip.index_gossips
-    @gossips = @gossips[params[:id].to_s.to_i]
     erb :show
+    Gossip.find(params[:id])
   end
 
 
