@@ -28,8 +28,10 @@ end
   end
 
   get '/gossips/:id' do
-    erb :show
-    Gossip.find(params[:id])
+
+    x = Gossip.find(params[:id])
+    
+       erb :show, locals: {gossip: x}
   end
 
 
