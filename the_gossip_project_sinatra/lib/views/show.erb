@@ -7,7 +7,7 @@
 
     <p>Voici la page du potin n°<%= params[:id] %></p>
        <p>Son auteur :  <%= gossip.author %><br/></p>
-       <p>Le contenu du potin :  <%=Gossip.all[id.to_i]%></p>
+       <p>Le contenu du potin :  <%= gossip.content%></p>
 
   </body>
 </html>
